@@ -20,7 +20,6 @@ class SongsController < ApplicationController
       @song.artist = artist
       @song.genre = genre
       @song.save
-      # binding.pry
       redirect_to @song
     else
       render :new
